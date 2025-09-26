@@ -4,6 +4,10 @@ local function map(m, k, v)
 	vim.keymap.set(m, k, v, { noremap = true, silent = true })
 end
 
+-- exit insert mode by pressing 'gh'
+map("i", "gh", "<Esc>")
+
+
 -- set leader
 map("", "<Space>", "<Nop>")
 vim.g.mapleader = " "
